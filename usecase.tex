@@ -1,10 +1,3 @@
-This is a collection of use case descriptions (one per use case).
-Think carefully about how to group these descriptions in the document.
-You can use the template style provided to format your descriptions:
-
-ADDED THIS TO CHECK
-
-
 \begin{UseCaseTemplate}
 \UseCaseLabel{Student Logs into system}
 \UseCaseDescription{A student from the University of Glasgow
@@ -14,7 +7,7 @@ ADDED THIS TO CHECK
   system. This gives the system added protection and privacy to those
   who should not have access to the system.}
 \UseCasePriority{High}
-\UseCaseStatus{Uncomplete}
+\UseCaseStatus{}
 \UseCaseActors{Student}
 \UseCaseExtensions{}
 \UseCaseIncludes{}
@@ -50,17 +43,66 @@ ADDED THIS TO CHECK
 \end{UseCaseTemplate}
 
 \begin{UseCaseTemplate}
-\UseCaseLabel{}
-\UseCaseDescription{}
-\UseCaseRationale{}
-\UseCasePriority{}
+\UseCaseLabel{Student Views Application}
+\UseCaseDescription{A student of the School of Computing Science can
+  view a list of placements/internships and also see more details of a
+  specific placement/internship}
+\UseCaseRationale{A student will need to view all of the
+  advertisements for this application to have merit, and finding out
+  more information about these advertisements is also helpful.}
+\UseCasePriority{High}
 \UseCaseStatus{}
-\UseCaseActors{}
+\UseCaseActors{Student}
+\UseCaseExtensions{}
+\UseCaseIncludes{Student Logs into System. Company Posts Application. }
+\UseCaseConditions{}
+\UseCaseNonFunctionalRequirements{}
+\UseCaseScenarios{Student views all advertisements, Student views
+  specific advertisement.}
+\UseCaseRisks{Advertisement may not be deleted immediately after a
+  successful applicant has been found so a student may apply for an
+  advertisement that is no longer available.}
+\UseCaseUserInterface{Application View Screen.}
+\end{UseCaseTemplate}
+
+\begin{UseCaseTemplate}
+\UseCaseLabel{Company Submits Application}
+\UseCaseDescription{A potential employer will submit an advertisement
+  for review by the Course Coordinator.}
+\UseCaseRationale{The submission must be available for any placements
+  to make their way onto the system after review by the Course Coordinator}
+\UseCasePriority{High}
+\UseCaseStatus{Incomplete Information}
+\UseCaseActors{Company}
 \UseCaseExtensions{}
 \UseCaseIncludes{}
 \UseCaseConditions{}
 \UseCaseNonFunctionalRequirements{}
-\UseCaseScenarios{}
-\UseCaseRisks{}
-\UseCaseUserInterface{}
+\UseCaseScenarios{Application is submitted for review.}
+\UseCaseRisks{A submission may be in an incorrect format that will not
+  be accepted by the Course Coordinator and may cause the company time
+  by having to redesign the advertisement - this may put some companys
+  off posting an advertisement.}
+\UseCaseUserInterface{Application Submission Screen.}
+\end{UseCaseTemplate}
+
+\begin{UseCaseTemplate}
+\UseCaseLabel{Course Coordinator Reviews Advertisement}
+\UseCaseDescription{As the original specification, the Course
+  Coordinator must review each individual advertisement before
+  publishing for viewing by students.}
+\UseCaseRationale{Specified inside the original specification.}
+\UseCasePriority{High}
+\UseCaseStatus{Incomplete Information}
+\UseCaseActors{Course Coordinator}
+\UseCaseExtensions{}
+\UseCaseIncludes{Company Submits Application}
+\UseCaseConditions{}
+\UseCaseNonFunctionalRequirements{}
+\UseCaseScenarios{Application passes review. Application fails review.}
+\UseCaseRisks{We currently do not know what the criteria for
+  applications are (except from there are no images). We do not know
+  what, if any, feedback is given to the applicants if they pass/fail
+  the review process.}
+\UseCaseUserInterface{Course Coordinator Advertisement View Screen.}
 \end{UseCaseTemplate}
