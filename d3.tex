@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{l3deliverable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}%
+%
+
+\version{SVN Revision 1~ \
+
+Made 28/10/2012~ by Team W}
+
+\usepackage{tabularx}%
+\usepackage{url}%
+\usepackage{usecasedescription}%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Check these macro values for appropriateness for your own document.
+
+\title{Requirements Document}
+
+\author{
+    Gordon Reid: 1002536R\\
+    Ryan Wells: 1002253W\\
+    Kristopher Stewart: 1007175S\\
+    David Selkirk: 1003646S\\
+    James Gallagher: 0800899G\\
+}
+
+\date{29 October 2012}
+
+\deliverableID{D3}
+\project{PSD3 Group Exercise 1}
+\team{W}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Standard section for all documents
+
+\section{Introduction}
+
+This is a test to make sure that james doesnt break anytying . . . 
+
+\subsection{Identification}
+
+\subsection{Related Documentation}
+
+\subsection{Purpose and Description of Document}
+
+\subsection{Document Status and Schedule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Extended Problem Definition}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The School of Computing Science are looking for a unified system for 
+collecting, reviewing, and publishing internship advertisements. There are 
+some main features which the system must possess: 
+
+Submission of internship advertisements;
+
+Review, comment, and publication of the internship advertisements;
+
+Viewing of internship advertisements;
+
+Notification of successful internship applications.
+
+The system does not have to support the actual application process, students
+are to use the companies own channels for this.
+
+Companies wishing to submit advertisements to the system are required to first
+contact the course coordinator for access to the system. This ensures no fake
+or spam advertisements can be submitted.
+
+Only textual data can be submitted as part of an advertisement. There are no
+strict guidelines for advertisement content so as a result, no automatic checks
+on the content can be done by the system, only manually by the course
+coordinator. The only possible check may be to ensure no duplicate entries
+to the system, this is because companies with multiple vacancies for the same
+job are only allowed a single advertisement which states the number of
+available positions.
+
+Each advertisement has to be reviewed and accepted by the course coordinator
+prior to submission for students to view. As part of the review process, the
+course coordinator can comment on the advertisement, either for another member
+of staff to look at prior to submission or as part of feedback to be sent back
+to the company. In the event of an application being rejected, the system is
+not required to submit feedback to the company, this is to be done separately
+by the course coordinator.
+
+When an internship advertisement has been reviewed and published, students 
+are to be notified somehow. This can be done either by mass email or via a 
+notification presented to the user on login to the system.
+
+The system is available for all Computing Science students to access and 
+they are all free to apply for any internship available. The login process could
+conveniently be linked with existing student accounts and thus be handled separately
+to the system.
+
+Students will have a status to allow the course coordinator to track progress
+through the system. A student can either be accepted into an internship, pending
+approval/response to an internship application, or yet to apply/no current 
+application in progress.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{System Scope}
+
+Give an overview of the system here, in the context of the surrounding
+environment.  Use case diagrams can be used to illustrate the
+interactions between actors in the environment and the system.
+
+You should explain the assumptions you have made in defining the
+boundary of the system (i.e. what the system will and will not do).
+
+Describe any conflicts in requirements expressed by different
+stakeholders, how you resolved them and why.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{System Actors}
+
+Give descriptions of each of the actors that you have identified as
+interacting with the system.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Domain Model}
+
+Explain the elements of the domain here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Use Case Descriptions}
+\input{usecase.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Non Functional Requirements}
+
+Describe the non-functional requirements for the system here, giving a
+rationale (traceable to your requirements gathering) for each.  You
+will need to think about how to group/structure requirements in this
+section.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Summary}
+
+Give a (very short) summary of the key aspects of the requirements
+specification.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\appendix
+
+Some suggested appendices are included below.
+
+Appendices should be used to include information not completely
+necessary to the understanding of the main document.
+
+\section{Glossary}
+
+Definitions.
+
+\section{Scenarios}
+
+A collection of scenarios you developed to exercise and refine your
+use cases.
+
+\section{Stakeholder Interview Documentation}
+
+Any evidence you gathered from stakeholders relevant to your
+requirements description.  You don't need to include everything
+verbatim here, but summary documents, for example, identifying the key
+points you identified (particularly if they relate to requirements
+conflicts) can be useful.
+
+\section{Stakeholder Panel Documentation}
+
+(see above)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
