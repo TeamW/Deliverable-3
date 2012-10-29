@@ -87,6 +87,31 @@
 \end{UseCaseTemplate}
 
 \begin{UseCaseTemplate}
+\UseCaseLabel{Company Edits Application}
+\UseCaseDescription{A potential employer can edit an advertisement.}
+\UseCaseRationale{The terms or specific details of an advertisement may
+  change during the time the advert is active so the company must be
+  able to edit this information.}
+\UseCasePriority{Medium}
+\UseCaseStatus{Incomplete Information}
+\UseCaseActors{Company, Course Coordinator.}
+\UseCaseExtensions{Company Submits Application. Course Coordinator
+  Reviews Advertisement.}
+\UseCaseIncludes{}
+\UseCaseConditions{Cannot edit an application that is not yet active.}
+\UseCaseNonFunctionalRequirements{}
+\UseCaseScenarios{Company Edits Application.}
+\UseCaseRisks{We do not know if the application has to be reviewed after
+  the edit has been made - this does make sense as if the edit was not
+  reviewed then the company could change the edit to something that is
+  no longer suitable. We do not know if there is a limit to the number
+  of edits the company can make before another advertisement has to be
+  submitted.}
+\UseCaseUserInterface{Course Coordinator Advertisement View Screen, 
+  Application Submission Screen.}
+\end{UseCaseTemplate}
+
+\begin{UseCaseTemplate}
 \UseCaseLabel{Course Coordinator Reviews Advertisement}
 \UseCaseDescription{As the original specification, the Course
   Coordinator must review each individual advertisement before
@@ -105,4 +130,26 @@
   what, if any, feedback is given to the applicants if they pass/fail
   the review process.}
 \UseCaseUserInterface{Course Coordinator Advertisement View Screen.}
+\end{UseCaseTemplate}
+
+\begin{UseCaseTemplate}
+\UseCaseLabel{Student Notifies Course Coordinator of Successful 
+  Application}
+\UseCaseDescription{As the original specification, a successful student
+  must notify the course coordinator of their success and this must be
+  added to the database.}
+\UseCaseRationale{Specified inside the original specification.}
+\UseCasePriority{High}
+\UseCaseStatus{Incomplete Information}
+\UseCaseActors{Course Coordinator. Student}
+\UseCaseExtensions{Student Logs into System.}
+\UseCaseIncludes{Company Submits Application}
+\UseCaseConditions{Student must be a CS Student.}
+\UseCaseNonFunctionalRequirements{}
+\UseCaseScenarios{Student notifies Course Coordinator.}
+\UseCaseRisks{We do not know if this must integrate with the current 
+ database or not. We do not know if the student will recieve 
+ confirmation by the Coordinator of receipt of this notification. We 
+ do not know if the student has to show proof of success.}
+\UseCaseUserInterface{Student Notification Screen.}
 \end{UseCaseTemplate}
