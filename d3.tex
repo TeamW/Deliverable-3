@@ -257,31 +257,32 @@ Coordinator - has access to the SEList and Database.
 
 \section{Non Functional Requirements}
 
-Being available through Moodle, the system is highly portable and can be
-accessed from anywhere with an internet connection and a browser as long as
-they're able to remember their GUID login.
+The system can be accessed from anywhere with an internet connection and a
+browser. The only authentication required is the staff or student's GUID or the
+company's login.
 
-The flexibility of the system is minimal as it's being designed for a basic
-purpose of allowing adverts to be displayed to appropriate parties to apply,
-SE/CS students etcetera thus high flexibility isn't required.
+The flexibility of the system is low as it is being designed for the sole
+purpose of allowing adverts to be displayed to the students registered with the
+School of Computing Science.
 
-The systems availability should be continual with no downtime throughout the
-academic year (summer as well?). Adding/removing adverts, changing user status,
-any specific functionality of the system should not require downtime for the
-updating of any associated databases, it should be instantaneous in similar
-respects to an internet forum. There may be maintenance required on the system
-to fix any errors but at most, for only 1 hour per week - Tuesday, 7am.
+The systems availability should be continual with no unplanned downtime
+throughout the calendar year. Adding and removing adverts, changing user status,
+and any other specific functionality of the system should not require downtime
+for the updating of any associated databases. Changes should be instantaneous,
+in similar respects to an internet forum. There may be maintenance required on
+the system to fix any errors but this should be at most one hour per week.
 
-Students should be authenticated by logging in with Moodle making accounts
-linked to their GUID and everyone is accountable, keeping the integrity of the
-system intact by only allowing Glasgow University students see, or more
-specifically Software engineering/Computing Science.
+Students are authenticated by logging in with their GUID. This ensures only
+University of Glasgow students can access the advertisements. This is further
+limited to students registered with the School of Computing Science. Companies
+wishing to submit advertisements are given separate logins at the discretion
+of the Course Coordinator.
 
-Students will have 3 available statuses; accepted, pending approval, not applied
-which will be tracked by both the user themselves and the course coordinator
-through the database. The status will be updated when the company replies back a
-response to a students application to the course coordinator, who will then
-update the status via the admin panel.
+Students will have three available statuses: accepted; pending approval; no
+current application. These will be tracked by both the user themselves and the
+course coordinator through the database. The status will be updated when the
+company replies back a response to a students application to the course
+coordinator, who will then update the status via the admin panel.
 
 The course coordinator (admin of system) has the ability to change user status
 of other members, presumably staff members for assisting in the evaluation and
