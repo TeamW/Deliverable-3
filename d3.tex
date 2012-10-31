@@ -260,12 +260,8 @@ Test update from home.
 \section{Non Functional Requirements}
 
 The system can be accessed from anywhere with an internet connection and a
-browser. The only authentication required is the staff or student's GUID or the
-company's login.
-
-The flexibility of the system is low as it is being designed for the sole
-purpose of allowing adverts to be displayed to the students registered with the
-School of Computing Science.
+browser. The only authentication required is the staff or student's GUID or 
+the company's login.
 
 The systems availability should be continual with no unplanned downtime
 throughout the calendar year. Adding and removing adverts, changing user status,
@@ -274,54 +270,18 @@ for the updating of any associated databases. Changes should be instantaneous,
 in similar respects to an internet forum. There may be maintenance required on
 the system to fix any errors but this should be at most one hour per week.
 
-Students are authenticated by logging in with their GUID. This ensures only
-University of Glasgow students can access the advertisements. This is further
-limited to students registered with the School of Computing Science. Companies
-wishing to submit advertisements are given separate logins at the discretion
-of the Course Coordinator.
+Only University of Glasgow students can access the advertisements. This is 
+further limited to students registered with the School of Computing Science. 
+Companies wishing to submit advertisements are given separate logins at the 
+discretion of the Course Coordinator.
 
-Students will have three available statuses: accepted; pending approval; no
-current application. These will be tracked by both the user themselves and the
-course coordinator through the database. The status will be updated when the
-company replies back a response to a students application to the course
-coordinator, who will then update the status via the admin panel.
+The mass email system will not impact on the continuning functionality of the 
+application and veiwing system for the Course Coordinator who should be able 
+to complete other tasks while this is in operation.
 
-The course coordinator (admin of system) has the ability to change user status
-of other members, presumably staff members for assisting in the evaluation and
-acceptance/rejection of viable adverts to display. This can be done instantly by
-using the simple admin panel and searching for a user member which should only
-take at most a second or two, selecting and changing permissions which will
-update the user database giving additional functionality to that account.
+The overall number of concurrent users on the system is dependant on the 
+systems infrastructure and should not have a capped user limit.
 
-The course coordinator(s) have the ability to accept or reject potential adverts
-from companies with a mandatory feedback text box if they're rejected to allow
-the company to know why such as insufficient criteria for the students to make a
-decision etcetera.
-
-A mass email will be sent to the user list on publication of an advert
-automatically, it will only require as much time as it takes to send all the
-emails to the user list and wont be based on any admin interaction other than
-accepting an advert so there's no margin for error other than server problems
-not sending the emails.
-
-The overall number of concurrent users on the system is dependant on the
-hardware of the server, should be capable of a few hundred without considerable
-traffic problems.
-
-A search function, if implemented, will have a filtering system to minimize the
-number of available criteria shown and speed up the search to near instantaneous
-when a student searches for a particular advert.
-
-Constraints will be in place such that companies can only see their own adverts
-and none of the others available for student viewing and only the course
-coordinator(s) will be able to see the list of adverts awaiting evaluation.
-
-Companies will be given accounts at the request of the course coordinator, which
-when authenticated and logged in will be able to add/edit adverts based on a
-pre-defined template that will require specific information - name of the
-company, location of placement, name and email of somebody in the company,
-wages, length of placement, information on how to apply and a textual
-description of what a student will have to do there.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
