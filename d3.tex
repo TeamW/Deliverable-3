@@ -170,9 +170,9 @@ application in progress.
 %Describe any conflicts in requirements expressed by different
 %stakeholders, how you resolved them and why.
 
-The system, broadly speaking, is to allow companies to submit advertisments 
+The system, broadly speaking, is to allow companies to submit advertisements 
 of internships to the school. Upon approval by the course coordinator the 
-advertisments can be viewed by students, who then apply to any internships 
+advertisements can be viewed by students, who then apply to any internships 
 that suit them. The students with successful applications can then notify 
 the coordinator, who can approve or deny the students internship based on 
 course outlines. 
@@ -214,7 +214,7 @@ with regards to the system.\\
 
 The Course Coordinator: this refers to the designated staff member who's job
 it is to manage SE internships. This is a single person role, but can be 
-passed from one staff member to another in the event of illness etc.\\
+passed from one staff member to another in the event of illness etcetera\\
 
 The Student: this is broken into two sub categories, that of SE students and
 everyone else. SE students have more rights in the system. Widely, the student
@@ -255,29 +255,68 @@ Coordinator - has access to the SEList and Database.
 
 \section{Non Functional Requirements}
 
-Being available through moodle, the system is highly portable and can be accessed from anywhere with an internet connection and a browser as long as they're able to remember their GUID login.
+Being available through Moodle, the system is highly portable and can be
+accessed from anywhere with an internet connection and a browser as long as
+they're able to remember their GUID login.
 
-The flexibility of the system is minimal as it's being designed for a basic purpose of allowing adverts to be displayed to appropriate parties to apply, SE/CS students etc thus high flexibility isn't required.
+The flexibility of the system is minimal as it's being designed for a basic
+purpose of allowing adverts to be displayed to appropriate parties to apply,
+SE/CS students etcetera thus high flexibility isn't required.
 
-The systems availability should be continual with no downtime throughout the academic year (summer aswell?). Adding/removing adverts, changing user status, any specific functionality of the system should not require downtime for the updating of any associated databases, it should be instantaneous in similiar respects to an internet forum. There may be maintenance required on the system to fix any errors but at most, for only 1 hour per week - tuesday, 7am.
+The systems availability should be continual with no downtime throughout the
+academic year (summer as well?). Adding/removing adverts, changing user status,
+any specific functionality of the system should not require downtime for the
+updating of any associated databases, it should be instantaneous in similar
+respects to an internet forum. There may be maintenance required on the system
+to fix any errors but at most, for only 1 hour per week - Tuesday, 7am.
 
-Students should be authenticated by logging in with moodle making accounts linked to their GUID and everyone is accountable, keeping the integrity of the system intact by only allowing Glasgow University students see, or more specifically Software engineering/Computing Science.
+Students should be authenticated by logging in with Moodle making accounts
+linked to their GUID and everyone is accountable, keeping the integrity of the
+system intact by only allowing Glasgow University students see, or more
+specifically Software engineering/Computing Science.
 
-Students will have 3 available statuses; accepted, pending approval, not applied which will be tracked by both the user themselves and the course coordinator through the database. The status will be updated when the company replies back a response to a students application to the course coordinator, who will then update the status via the admin panel.
+Students will have 3 available statuses; accepted, pending approval, not applied
+which will be tracked by both the user themselves and the course coordinator
+through the database. The status will be updated when the company replies back a
+response to a students application to the course coordinator, who will then
+update the status via the admin panel.
 
-The course coordinator (admin of system) has the ability to change user status of other members, presumably staff members for assisting in the evaulation and acceptance/rejection of viable adverts to display. This can be done instantly by using the simple admin panel and searching for a user member which should only take at most a second or two, selecting and changing permissions which will update the user database giving additional functionality to that account.
+The course coordinator (admin of system) has the ability to change user status
+of other members, presumably staff members for assisting in the evaluation and
+acceptance/rejection of viable adverts to display. This can be done instantly by
+using the simple admin panel and searching for a user member which should only
+take at most a second or two, selecting and changing permissions which will
+update the user database giving additional functionality to that account.
 
-The course coordinator(s) have the ability to accept or reject potential adverts from companies with a mandatory feedback textbox if they're rejected to allow the company to know why such as insufficient criteria for the students to make a decision etc.
+The course coordinator(s) have the ability to accept or reject potential adverts
+from companies with a mandatory feedback text box if they're rejected to allow
+the company to know why such as insufficient criteria for the students to make a
+decision etcetera.
 
-A mass email will be sent to the user list on publication of an advert automatically, it will only require as much time as it takes to send all the emails to the user list and wont be based on any admin interaction other than accepting an advert so there's no margin for error other than server problems not sending the emails.
+A mass email will be sent to the user list on publication of an advert
+automatically, it will only require as much time as it takes to send all the
+emails to the user list and wont be based on any admin interaction other than
+accepting an advert so there's no margin for error other than server problems
+not sending the emails.
 
-The overall number of concurrent users on the system is dependant on the hardware of the server, should be capable of a few hundred without considerable traffic problems.
+The overall number of concurrent users on the system is dependant on the
+hardware of the server, should be capable of a few hundred without considerable
+traffic problems.
 
-A search function, if implemented, will have a filtering system to minimize the number of available criteria shown and speed up the search to near instantaneous when a student searches for a particular advert.
+A search function, if implemented, will have a filtering system to minimize the
+number of available criteria shown and speed up the search to near instantaneous
+when a student searches for a particular advert.
 
-Constraints will be in place such that companies can only see their own adverts and none of the others available for student viewing and only the course coordinator(s) will be able to see the list of adverts awaiting evaulation.
+Constraints will be in place such that companies can only see their own adverts
+and none of the others available for student viewing and only the course
+coordinator(s) will be able to see the list of adverts awaiting evaluation.
 
-Companies will be given accounts at the request of the course coordinator, which when authenticated and logged in will be able to add/edit adverts based on a pre-defined template that will require specific information - name of the company, location of placement, name and email of somebody in the company, wages, length of placement, information on how to apply and a textual description of what a student will have to do there.
+Companies will be given accounts at the request of the course coordinator, which
+when authenticated and logged in will be able to add/edit adverts based on a
+pre-defined template that will require specific information - name of the
+company, location of placement, name and email of somebody in the company,
+wages, length of placement, information on how to apply and a textual
+description of what a student will have to do there.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
