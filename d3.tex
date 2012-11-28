@@ -7,9 +7,9 @@
 \usepackage{graphicx}%
 %
 
-\version{Draft version
+\version{Reviewed -- 28/11/2012 by Team W
 
-Made 31/10/2012~ by Team W}
+Draft version -- 31/10/2012 by Team W}
 
 \usepackage{tabularx}%
 \usepackage{url}%
@@ -28,7 +28,7 @@ Made 31/10/2012~ by Team W}
     James Gallagher: 0800899G\\
 }
 
-\date{1st November 2012}
+\date{29 November 2012}
 
 \deliverableID{D3}
 \project{PSD3 GE1 - Internship Management System}
@@ -66,38 +66,19 @@ PSD3 Group Exercise Description:
 
 \subsection{Purpose and Description of Document}
 
-This document establishes a complete description of the behaviour of the
-internship management system to be developed by Team W. The document gives a
-clear overview of the all of the main functions that the School of Computing
-Science internship management system must possess. The first section clearly
-outlines the main functions of the system, in an extended problem description.  
+This document proposes a description of the behaviour of the
+internship management system as proposed by Team W. The document gives a
+clear overview of the main functions that the School of Computing
+Science Internship Management system must possess, established by our finidings through the requirements gathering process. \\
 
-The requirements specification goes on to spell out the full scope of the system
-to be developed. It does this by providing a detailed description of the system
-actors (those who will be interacting with the system on a daily basis), and
-providing a detailed domain model (a conceptual model of the specific problem,
-describing the various entities and their attributes: roles, relationships, and
-constraints). 
-
-The documents goes on to include a full set of use cases for the system, that
-describe the interactions the users will have with the software. 
-
-The requirements specification continues with a list of non functional
-requirements of the system (requirements that specify criteria that can be used
-to judge the operation of a system, rather than specific behaviours), and 
-provides a short summary of the key aspects of the requirements specification
-document itself.
-
-Finally the document concludes with a glossary, a list of scenarios used in the
-development and creation of the systems use cases, and a collection of client
-interview documentation. 
+This document will endeavour to clarify the requirements of the system in a detailed and concise manner through the following methods: detailed system and actor descriptions, domain modelling, use case descriptions with diagrams, and non functional requirements of the system.
 
 \subsection{Document Status and Schedule}
 
 The creation of this document was aided by two previous Professional Software
 Development coursework deliverables, a client interview with course
 lecturer Rose English, and a stakeholder panel with four main stakeholders.
-This document is still in draft stages.
+This document has undergone two draft stages and this is the reviewed copy. This document is still subject to change if and when requirements change.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -105,56 +86,52 @@ This document is still in draft stages.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The School of Computing Science are looking for a unified system for 
-collecting, reviewing, and publishing internship advertisements. There are 
-some main features which the system must possess: 
+The School of Computing Science at the University of Glasgow are looking for a unified system for 
+collecting, reviewing, and publishing internship advertisements. Stated features features which the system must possess include: 
+\begin{itemize}
+\item Submission of internship advertisements,
+\item Review, comment, and publication of internship advertisements,
+\item Viewing of internship advertisements, and
+\item Notification of successful internship applications.
+\end{itemize}
+The system does not have to support the application process, this is outsite the scope of the system and students are to use the companies own processes for this. \\ \\ 
+These sections are extrapolated below with further information gathered from interviews and panelists.
 
-Submission of internship advertisements;
-
-Review, comment, and publication of the internship advertisements;
-
-Viewing of internship advertisements;
-
-Notification of successful internship applications.
-
-The system does not have to support the actual application process, students
-are to use the companies own channels for this.
-
+\subsection{Submission of internship advertisements}
 Companies wishing to submit advertisements to the system are required to first
-contact the course coordinator for access to the system. This ensures no fake
-or spam advertisements can be submitted.
+contact the course coordinator for access to the system and a system login will be given to a legitimate company. This ensures validity of submissions.
+\\ \\
+Only textual data can be submitted as part of an advertisement. A company must fill specific fields for the advertisement to be submitted, these fields have not been formalised but are assumidly: what the internship entails, salary, name and location of company and internship manager and contact details.
+\\ \\
+A further check may be to ensure no duplicate entries to the system, but may be redundant as the Course Coordinator must approve each advertisement before it becomes live on the system.
 
-Only textual data can be submitted as part of an advertisement. There are no
-strict guidelines for advertisement content so as a result, no automatic checks
-on the content can be done by the system, only manually by the course
-coordinator. The only possible check may be to ensure no duplicate entries
-to the system, this is because companies with multiple vacancies for the same
-job are only allowed a single advertisement which states the number of
-available positions.
-
+\subsection{Review, comment, and publication of internship advertisements}
 Each advertisement has to be reviewed and accepted by the course coordinator
-prior to submission for students to view. As part of the review process, the
-course coordinator can comment on the advertisement, either for another member
-of staff to look at prior to submission or as part of feedback to be sent back
-to the company. In the event of an application being rejected, the system is
-not required to submit feedback to the company, this is to be done separately
+prior to becoming live on the system for students to view. As part of the review process, the
+course coordinator can accept or reject the advertisement. In the event of an application being rejected, the system is not required to submit feedback to the company, this is outside the scope of the system and is handled seperately
 by the course coordinator.
-
+\\ \\
+The Course Coordinator is required to state whether or not a given placement is suitable for Software Engineering or Electronic and Software Engineering students.
+\\ \\
 When an internship advertisement has been reviewed and published, students 
-are to be notified somehow. This can be done either by mass email or via a 
+are to be notified. This can be done either by mass email or via a 
 notification presented to the user on login to the system.
+\\ \\
+It was noted that a Course Coordinator should have an overview `Dashboard' on the system where they can quickly see how many advertisements are live, pending and rejected, and also how many students have confirmed internships, are pending confirmation of internships through the Course Coordinator, have applied for internships and have not applied for internships thus far.
 
+\subsection{Viewing of internshop advertisements}
 The system is available for all Computing Science students to access and 
-they are all free to apply for any internship available however SE/ESE students
-are required to apply for SE/ESE suitable internships. The course coordinator is
-responsible for adding this statement to the advertisement prior to publication.
-The login process will be linked with existing student accounts and thus be
-handled separately to the system.
+all Computing Science students can apply for any internship available, however SE/ESE students
+are required to apply for SE/ESE suitable internships.
+\\ \\
+The login process will be linked with existing student accounts and be
+handled separately to the system and thus is outside the scope of the system. However care and consideration concerning how and where this will be integrated is good software practice and will make the system more maintainable.
 
+\subsection{Notification of successful internship applications}
 Students will have a status to allow the course coordinator to track progress
-through the system. A student can either be accepted into an internship, pending
-approval/response to an internship application, or yet to apply/no current 
-application in progress.
+through the system. A student can have the status of: Confirmed an internship, pending
+approval to an internship success, awaiting response to an internship application, or yet to apply/no current 
+application in progress. The student will be able to notify the Course Coordinator of a successful placement through the system and this process will be able to convey the necessary information, which is assumidly the details of the advertisement.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -170,58 +147,50 @@ application in progress.
 %Describe any conflicts in requirements expressed by different
 %stakeholders, how you resolved them and why.
 
-The system, broadly speaking, is to allow companies to submit advertisements 
-of internships to the school. Upon approval by the course coordinator the 
-advertisements can be viewed by students, who then apply to any internships 
-that suit them. The students with successful applications can then notify 
+The system is to be a unified system of gathering, approving and viewing internships that are relevant to Third Year Computing Science, Software and Electronic and Software Engineers.
+\\ \\
+The system  must allow companies to submit advertisements 
+of internships and upon approval by the course coordinator the 
+advertisements can be viewed by students. The students with successful applications can then notify 
 the coordinator, who can approve or deny the students internship based on 
-course outlines. 
+course outlines. The system will notify all students of newly available internships.
 
-Let us look at each actors interaction with the system.
-
------------------------------------------------
-
-The Company can log in and submit advertisements to the system. They may 
-view their own advertisements, as well as the standardised template for 
+The system will not provide an application for handling applications. This is outside the scope of the system. Confusion arose when conflicting panelists views were stated on this issue, a distinct contradiction was drawn that the system was to have and was not to have this feature. It was later clarified that the system was not to have this feature. The system will not have any direct contact with a company. This was finalised by panelists.
+\\\\
+A Company can log in and submit advertisements to the system. They may 
+view only their own advertisements, as well as the standardised template for 
 advertisements.
 
-The Course Coordinator has the most interaction. They may view, comment 
-on (aka tag as SE-based), approve and remove advertisements. They can also 
-view and change each SE students application status, as well as sending 
-the student a notification of success.
+A company cannot edit an application after it has gone live. This was a stated requirement that all stakeholders agreed upon. 
+\\\\
+The Course Coordinator can log in, approve or reject submitted advertisements and can tag advertisements for SE/ESE students only. They can also view and change each students application status, as well as sending 
+the student a notification of success reply.
 
-The Student may view advertisements and log in. They can also (while logged 
-in send a notification of successful application to an internship, whether 
-it's a job in the system or externally sourced.
-
------------------------------------------------
-
-We must clarify the boundaries of the system. The system will not 
-handle internship applications in any form, it will only display the 
-job details. It will however allow the student to send a notification 
-of successful application to the course coordinator. The system will 
-not notify companies that a successful student application has been 
-approved, it will only notify the student. The system will allow any 
-student to view the advertisements, but only SE students may notify 
-the course coordinator of application.
+The Course Coordinator cannot edit a pending application. The notification of success reply contains no comments about the reply, this is outside the scope of the system. 
+\\\\
+The Student may log in and view advertisements. They can send a notification of successful application to an internship, whether it's a job in the system or externally sourced. If the student is a SE/ESE student then the Course Coordinator must review the internship at this stage if it is an externally sourced internship.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{System Actors}
+\begin{itemize}
+\item The Company:
 
-The Company: this includes any organisation that wishes to submit 
+This includes any organisation that wishes to submit 
 advertisements to the system. Organisations such as Club21, which handle
 many different companies and advertisements, still count as a single Company
 with regards to the system.
 
-The Course Coordinator: this refers to the designated staff member who's job
+\item The Course Coordinator: 
+
+This refers to the designated staff member whose responsibility
 it is to manage SE internships. This is a single person role, but can be 
-passed from one staff member to another in the event of illness etcetera.
+passed from one staff member to another in extreme circumstances.
 
-The Student: this is broken into two sub categories, that of SE students and
-everyone else. SE students have more rights in the system. Widely, the student
-is anybody with a GUID that wishes to use the system.
+\item The Student: 
 
+This refers to Third Year Students studying under the School of Computing Science at the University of Glasgow.
+\end{itemize}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Domain Model}
@@ -242,43 +211,35 @@ is anybody with a GUID that wishes to use the system.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Non Functional Requirements}
-
-The system can be accessed from anywhere with an internet connection and a
+\begin{itemize}
+\item The system can be accessed from anywhere with an internet connection and a
 browser. The only authentication required is the staff or student's GUID or 
 the company's login.
 
-The systems availability should be continual with no unplanned downtime
-throughout the calendar year. Adding and removing adverts, changing user status,
+\item The systems availability should be continual with no unplanned downtime
+throughout the time the system should be live. Adding and removing adverts, changing user status,
 and any other specific functionality of the system should not require downtime
-for the updating of any associated databases. Changes should be instantaneous,
-in similar respects to an internet forum. There may be maintenance required on
+for the updating of any associated databases. Changes should be instantaneous. There may be maintenance required on
 the system to fix any errors but this should be at most one hour per week.
 
-Only University of Glasgow students can access the advertisements. This is 
+\item Only University of Glasgow students can access the advertisements. This is 
 further limited to students registered with the School of Computing Science. 
 Companies wishing to submit advertisements are given separate logins at the 
 discretion of the Course Coordinator.
 
-The mass email system will not impact on the continuing functionality of the 
+\item The mass email system will not impact on the continuing functionality of the 
 application and viewing system for the Course Coordinator who should be able 
 to complete other tasks while this is in operation.
 
-The overall number of concurrent users on the system is dependant on the 
+\item The overall number of concurrent users on the system is dependant on the 
 systems infrastructure and should not have a capped user limit.
-
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Summary}
 
-The system, in summary, is to allow companies to submit internship
-advertisements for review by the Course Coordinator (CC). The CC either 
-allows the advert in its current form and publishes it for students to view
-or contacts the company out with the system with their comments on how to
-improve the advertisement. Students view the advertisements and apply for
-the internships they are interested in via the method stated in the
-advertisement. Student's progress for obtaining an internship is tracked by
-and controlled by the CC.
+This document, while subject to change if and when requirements change, outlines the functionality and non functional requirements of the Internship Management System to be developed for the University of Glasgow and as defined by requirements gathering by Team W. The system must allow advertisements to be added by a Company and be edited by a Company until being vetted by a Course Coordinator and then can be viewed by a Student. A student must also be able to declare their success in an application to the Course Coordinator through this system.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -318,9 +279,6 @@ feature is out with the scope of the system or the interviewee did not
 know the answer.
 
 \section{Stakeholder Panel Documentation}
-
-This section will list main points, in summary form, clarified in the
-stakeholder panel. The information is not currently in any logical order.
 
 \begin{itemize}
 
